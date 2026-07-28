@@ -29,6 +29,7 @@ Make sure you have the following installed on your system:
 1. Clone the repository:
    ```bash
    git clone [https://github.com/vedantmb07/Notes-App.git](https://github.com/vedantmb07/Notes-App.git)
+   ```
 
 
 Built with ❤️ by [vedantmb07](https://github.com/vedantmb07).
