@@ -1,5 +1,3 @@
-# Notes App
-
 # Notes App 📝
 
 A simple and intuitive Notes application built to help users efficiently write, organize, and manage their daily notes.
