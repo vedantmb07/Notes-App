@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
 
 body {
   margin: 0;
@@ -157,33 +157,45 @@ button:hover {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.9rem;
   width: 100%;
+  align-items: start;
 }
 
 .card {
-  min-height: 180px;
+  min-height: 150px;
+  max-width: 260px;
+  width: 100%;
+  justify-self: center;
   background: linear-gradient(135deg, #fef4ff 0%, #d8eef9 100%);
   color: #1f2940;
   font-weight: 600;
-  padding: 1rem;
+  padding: 0.95rem 0.95rem 1rem;
   border-radius: 18px;
   position: relative;
-  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.18);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.16);
   animation: fadeInUp 0.7s ease both;
 }
 
 .card .title {
-  text-align: left;
-  font-size: 1.15rem;
-  margin-bottom: 0.5rem;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  margin: 0.2rem 0 0.55rem;
   font-weight: 700;
+  color: #21304d;
 }
 
 .card .desc {
   line-height: 1.5;
   color: #3b4762;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.98rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .del {
@@ -204,22 +216,34 @@ button:hover {
 }
 
 .footer-bar {
-  max-width: 980px;
-  margin: 2rem auto 0;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #cfd7ff;
-  font-size: 0.95rem;
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
 }
 
 .footer-bar a {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  color: #cfd7ff;
+  gap: 0.5rem;
+  color: #f3f5ff;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-bar a:hover {
+  color: #8fb8ff;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.github-icon {
+  font-size: 1.1rem;
 }
 
 .quote {

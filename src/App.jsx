@@ -87,10 +87,9 @@ function App() {
       </section>
 
       <footer className="footer-bar">
-        <span>Designed by Vedant</span>
-        <a href="https://github.com/vedantmb07" target="_blank" rel="noreferrer">
-          <FaGithub />
-          <span>github.com/vedantmb07</span>
+        <a href="https://github.com/vedantmb07" target="_blank" rel="noreferrer" aria-label="Visit Vedant's GitHub">
+          <span className="footer-text">Designed by Vedant</span>
+          <FaGithub className="github-icon" />
         </a>
       </footer>
     </div>
